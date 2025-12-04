@@ -19,19 +19,19 @@ Simple blockchain prototype built with Solidity and executed in Remix IDE. Demon
 
 ## Project Structure 📂
 
-* **contracts**  Solidity contracts
-* **scripts**  deploy scripts
-* **tests**  unit tests
-* **artifacts**  compiled build output
+* **contracts**: Solidity contracts
+* **scripts**: deploy scripts
+* **tests**: unit tests
+* **artifacts**: compiled build output
 
 ## Setup ⚙️
 
 * Clone or download this repo
 * Import folder into Remix file explorer
-* Open `contracts` and select main Solidity file
+* Open contracts and select main Solidity file
 * Choose proper compiler version
 
-## How to Use ▶️ ▶️
+## How to Use ▶️
 
 * Open Remix IDE
 * Import project files
@@ -59,13 +59,13 @@ Each block stores:
 * Block added after validation
 * Entire chain checked for consistency
 
-## Key Functions 💡 💡
+## Key Functions 💡
 
-* **createGenesisBlock** generate first block
-* **addBlock** add new block to chain
-* **mineBlock** Proof of Work mining loop
-* **calculateHash** compute SHA3 hash of block data
-* **isChainValid** verify chain consistency
+* createGenesisBlock: generate first block
+* addBlock: add new block to chain
+* mineBlock: Proof of Work mining loop
+* calculateHash: compute SHA3 hash of block data
+* isChainValid: verify chain consistency
 
 ## Blockchain Properties 📦
 
@@ -82,7 +82,7 @@ After mining a block:
 * Nonce increases until match achieved
 * Chain grows sequentially
 
-## Example Use Cases 🎯 🎯
+## Example Use Cases 🎯
 
 * Learning blockchain fundamentals
 * Academic demonstration
