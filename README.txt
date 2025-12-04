@@ -1,28 +1,97 @@
-REMIX DEFAULT WORKSPACE
+# Blockchain in Remix IDE 🚀
 
-Remix default workspace is present when:
-i. Remix loads for the very first time 
-ii. A new workspace is created with 'Default' template
-iii. There are no files existing in the File Explorer
+Simple blockchain prototype built with Solidity and executed in Remix IDE. Demonstrates blocks, hashing, and Proof of Work.
 
-This workspace contains 3 directories:
+## Features ✨
 
-1. 'contracts': Holds three contracts with increasing levels of complexity.
-2. 'scripts': Contains four typescript files to deploy a contract. It is explained below.
-3. 'tests': Contains one Solidity test file for 'Ballot' contract & one JS test file for 'Storage' contract.
+* Add blocks with custom data
+* Validate chain integrity
+* Generate hashes with keccak256
+* Mine blocks using nonce and difficulty
+* Track index, timestamp, data, previous hash, hash, nonce
 
-SCRIPTS
+## Tech Stack 🛠️
 
-The 'scripts' folder has two typescript files which help to deploy the 'Storage' contract using 'ethers.js' libraries.
+* Solidity
+* Remix IDE
+* JavaScript and TypeScript scripts
+* Mocha and Chai tests
 
-For the deployment of any other contract, just update the contract name from 'Storage' to the desired contract and provide constructor arguments accordingly 
-in the file `deploy_with_ethers.ts`
+## Project Structure 📂
 
-In the 'tests' folder there is a script containing Mocha-Chai unit tests for 'Storage' contract.
+* **contracts**  Solidity contracts
+* **scripts**  deploy scripts
+* **tests**  unit tests
+* **artifacts**  compiled build output
 
-To run a script, right click on file name in the file explorer and click 'Run'. Remember, Solidity file must already be compiled.
-Output from script will appear in remix terminal.
+## Setup ⚙️
 
-Please note, require/import is supported in a limited manner for Remix supported modules.
-For now, modules supported by Remix are ethers, swarmgw, chai, multihashes, remix and hardhat only for hardhat.ethers object/plugin.
-For unsupported modules, an error like this will be thrown: '<module_name> module require is not supported by Remix IDE' will be shown.
+* Clone or download this repo
+* Import folder into Remix file explorer
+* Open `contracts` and select main Solidity file
+* Choose proper compiler version
+
+## How to Use ▶️ ▶️
+
+* Open Remix IDE
+* Import project files
+* Compile the smart contract
+* Deploy using JavaScript VM
+* Call functions to mine blocks and inspect values
+
+## Block Structure 🧱
+
+Each block stores:
+
+* Index
+* Timestamp
+* Data
+* Previous Hash
+* Hash
+* Nonce
+* Difficulty
+
+## Workflow 🔄
+
+* Create Genesis block
+* Add data and mine new block
+* Proof of Work adjusts nonce until valid hash is found
+* Block added after validation
+* Entire chain checked for consistency
+
+## Key Functions 💡 💡
+
+* **createGenesisBlock** generate first block
+* **addBlock** add new block to chain
+* **mineBlock** Proof of Work mining loop
+* **calculateHash** compute SHA3 hash of block data
+* **isChainValid** verify chain consistency
+
+## Blockchain Properties 📦
+
+* Immutable linked data
+* Sequential block order
+* Hash based security
+* Tamper detection
+
+## Example Output 🖥️
+
+After mining a block:
+
+* Hash begins with required leading zeros
+* Nonce increases until match achieved
+* Chain grows sequentially
+
+## Example Use Cases 🎯 🎯
+
+* Learning blockchain fundamentals
+* Academic demonstration
+* Experimenting with Proof of Work
+
+## Contributors 🤝
+
+* Harinandan M V
+
+## License 📜
+
+Open educational usage
